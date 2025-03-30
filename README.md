@@ -24,7 +24,21 @@ vidtoolz install vidtoolz-split
 
 type ``vid split --help`` to get help
 
+```bash
+usage: vid split [-h] [-o OUTPUT] input splitat
 
+Split a video into two
+
+positional arguments:
+  input                 Single file name
+  splitat               Split at seconds.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o OUTPUT, --output OUTPUT
+                        Output file (default: None)
+
+```
 
 ## Development
 
