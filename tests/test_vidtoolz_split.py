@@ -3,13 +3,14 @@ import vidtoolz_split as w
 
 from argparse import Namespace, ArgumentParser
 
+
 def test_create_parser():
     subparser = ArgumentParser().add_subparsers()
     parser = w.create_parser(subparser)
 
     assert parser is not None
 
-    result = parser.parse_args(['hello.mp4', "5"])
+    result = parser.parse_args(["hello.mp4", "5"])
     assert result.input == "hello.mp4"
     assert result.splitat == 5
     assert result.output is None
